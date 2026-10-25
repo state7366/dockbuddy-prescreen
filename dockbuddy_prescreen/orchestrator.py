@@ -186,7 +186,7 @@ def _score_libscore(store: "libstore.CandidateStore", ms: "libmutlib.MutationSet
     """
     import importlib
 
-    mod = importlib.import_module(f"scoring.{adapter}")
+    mod = importlib.import_module(f"dockbuddy_scoring.{adapter}")
     kwargs = {k: v for k, v in cfg.items() if k != "adapter"}
     scores = mod.score_variants(ms.template_sequence, list(ms.variants), **kwargs)
     n = 0
