@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dockbuddy-prescreen"
-version = "0.1.1"
+version = "0.1.2"
 description = "DockBuddy 突变预筛管线(主动学习 + 打分→闸→采样→折叠回测→精筛→导出)，从 pipeline/prescreen 抽出的解耦版本"
 readme = "README.md"
 requires-python = ">=3.8"
