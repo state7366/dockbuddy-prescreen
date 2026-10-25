@@ -1,0 +1,4 @@
+dockbuddy-common>=0.1.1
+dockbuddy-scoring>=0.1.1
+dockbuddy-mutate>=0.1.1
+dockbuddy-evolution>=0.1.1

@@ -307,7 +307,7 @@ def _fold_esmfold(store: "libstore.CandidateStore", ms: "libmutlib.MutationSet",
 
     transport: "api"(缺省, 公共 REST API) / "local"(GPU 服务器本地推理)。
     """
-    import prescreen.fold_api as libfold_api
+    import dockbuddy_prescreen.fold_api as libfold_api
 
     transport = str(cfg.get("transport", "api") or "api")
     if transport not in ("api", "local"):
