@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dockbuddy-prescreen"
+version = "0.1.0"
+description = "DockBuddy 突变预筛管线(主动学习 + 打分→闸→采样→折叠回测→精筛→导出)，从 pipeline/prescreen 抽出的解耦版本"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "DockBuddy" }]
+keywords = ["protein", "variant", "prescreen", "active-learning", "bioinformatics"]
+dependencies = [
+    "dockbuddy-common>=0.1.1",
+    "dockbuddy-scoring>=0.1.1",
+    "dockbuddy-mutate>=0.1.1",
+    "dockbuddy-evolution>=0.1.1",
+]
+
+[project.urls]
+Repository = "https://pypi.cnb.cool/vcinex/bioinfo/-/packages/simple"
+
+[tool.setuptools.packages.find]
+include = ["dockbuddy_prescreen*"]
