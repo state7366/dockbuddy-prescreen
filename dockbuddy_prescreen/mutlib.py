@@ -50,7 +50,7 @@ LOG = logging.getLogger("dockpipeline")
 
 # 复用 libmutate 的解析与氨基酸表: 模块级零重依赖(parse_mutation 只用到正则,
 # AA1_TO_3/AA3_TO_1 是纯 dict), 不会触发 openmm/numpy 的导入。
-from dockbuddy_mutate import AA1_TO_3, AA3_TO_1, parse_mutation  # noqa: E402
+from dockbuddy_mutate.mutate import AA1_TO_3, AA3_TO_1, parse_mutation  # noqa: E402
 
 SCHEMA_VERSION = "1.0"
 # 标准 20 种氨基酸单字母(遍历饱和突变用); 顺序固定保证可复现。
